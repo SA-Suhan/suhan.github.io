@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>progress sign up form</title>
+  <style>
+  .container{
+  		width:340px;
+  		height:200px;
+  		background:#999;
+  		text-align:center;
+  		padding:50px 10px;
+  	 margin:200px auto;
+  	 position: relative;
+  	 overflow:hidden;
+  		}
+  		h1{
+  				color:#fff;
+  				font-weight:bold;
+  				border-bottom:2px dotted #000;
+  				}
+  	.container form{
+  			width:300px;
+  			height:450px;
+  			margin:auto;
+  			position: absolute;
+  			transition:all .5s;
+  			}
+   .container form input{
+   	 margin:10px;
+   		background: transparent;
+   		border:0;
+   		border-bottom:1px solid #000;
+   		color:white;
+   		}
+   ::placeholder{
+   		color:white;
+   		font-weight:300;
+   		}
+  	.container form button{
+  			width:100px;
+  			background:linear-gradient(to right,#ff7e17,red);
+  			color:white;
+  			border-radius:50px;
+  			border:none;
+  			margin:20px auto;
+  			}			
+  			
+  
+  			#form2{
+  					left:450px;
+  				
+  					}
+  		#form3{
+  				left:450px;
+  			
+  				}
+  		
+  		
+  </style>
+</head>
+<body>
+  <div class="container">
+  		<form id="form1">
+  		<h1>Contact</h1>
+  				<input type="email" placeholder="Email address" required>
+  				<input type="password" placeholder="Password" required>
+  				<input type="password" placeholder="Confirm Password" required>
+  				<button type="button" id="next1">Next</button>
+  				
+  		</form>
+  		
+  		
+  		
+  		<form id="form2">
+  		<h1>Contact</h1>
+  				<input type="email" placeholder="Email address" required>
+  				<input type="password" placeholder="Password" required>
+  				<input type="password" placeholder="Confirm Password" required>
+  				<button type="button" id="Back1">Back</button>
+  				<button type="button" id="next2">Next</button>
+  				
+  		</form>
+  		
+  			<form id="form3">
+  		<h1>Personal Info</h1>
+  				<input type="email" placeholder="Email address" required>
+  				<input type="password" placeholder="Password" required>
+  				<input type="password" placeholder="Confirm Password" required>
+  				<button type="button" id="Back2">Back</button>
+  				<button type="Submit" id="next3">Submit</button>
+  				
+  		</form>
+  		
+  </div>
+  
+  
+  <script>
+var form1 = document.getElementById("form1");
+var form2 = document.getElementById("form2");
+var form3 = document.getElementById("form3");
+
+var next1 = document.getElementById("next1");
+var next2 = document.getElementById("next2");
+var next3 = document.getElementById("next3");
+
+var Back1 = document.getElementById("Back1");
+var Back2 = document.getElementById("Back2");
+
+next1.onclick = function(){
+		form1.style.left ="-450px";
+		form2.style.left ="40px";
+		}
+next2.onclick = function(){
+		form2.style.left ="-450px";
+		form3.style.left ="40px";
+		}
+Back1.onclick = function(){
+		form1.style.left ="40px";
+		form2.style.left ="450px";
+		}
+Back2.onclick = function(){
+		form2.style.left ="40px";
+		form3.style.left ="450px";
+		}
+  </script>
+</body>
+</html>
